@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-labelledby="title description">
+  <title id="title">Blockchain Banking System Architecture</title>
+  <desc id="description">A browser communicates with a Flask web application, which connects to banking logic, SQLite storage, and an in-memory blockchain.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#000000"/>
+    </marker>
+    <style>
+      .box { fill: #ffffff; stroke: #000000; stroke-width: 2; rx: 14; }
+      .title { font: 700 22px Arial, sans-serif; fill: #000000; }
+      .text { font: 700 16px Arial, sans-serif; fill: #000000; }
+      .arrow { fill: none; stroke: #000000; stroke-width: 2.5; marker-end: url(#arrow); }
+      .label { font: 700 14px Arial, sans-serif; fill: #000000; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="760" fill="#ffffff"/>
+  <text x="600" y="52" text-anchor="middle" class="title" font-size="30">Blockchain Banking System Architecture</text>
+
+  <rect x="390" y="92" width="420" height="100" class="box"/>
+  <text x="600" y="133" text-anchor="middle" class="title">User</text>
+  <text x="600" y="162" text-anchor="middle" class="text">Web Browser / Client</text>
+
+  <rect x="340" y="250" width="520" height="120" class="box"/>
+  <text x="600" y="295" text-anchor="middle" class="title">Flask Web Application</text>
+  <text x="600" y="327" text-anchor="middle" class="text">Routes · Request handling · HTML templates</text>
+
+  <rect x="100" y="460" width="400" height="120" class="box"/>
+  <text x="300" y="505" text-anchor="middle" class="title">Banking &amp; Authentication Logic</text>
+  <text x="300" y="537" text-anchor="middle" class="text">Registration · Login · Deposits · Transfers</text>
+
+  <rect x="700" y="460" width="400" height="120" class="box"/>
+  <text x="900" y="505" text-anchor="middle" class="title">Blockchain Module</text>
+  <text x="900" y="537" text-anchor="middle" class="text">Create blocks · Link hashes · Verify chain</text>
+
+  <rect x="100" y="635" width="400" height="85" class="box"/>
+  <text x="300" y="671" text-anchor="middle" class="title">SQLite Database</text>
+  <text x="300" y="698" text-anchor="middle" class="text">User accounts and transaction records</text>
+
+  <rect x="700" y="635" width="400" height="85" class="box"/>
+  <text x="900" y="671" text-anchor="middle" class="title">In-Memory Blockchain</text>
+  <text x="900" y="698" text-anchor="middle" class="text">Blocks and transaction data (resets on restart)</text>
+
+  <path d="M600 192 L600 245" class="arrow"/>
+  <text x="618" y="224" class="label">HTTP</text>
+
+  <path d="M470 370 L330 455" class="arrow"/>
+  <path d="M730 370 L870 455" class="arrow"/>
+
+  <path d="M300 580 L300 630" class="arrow"/>
+  <path d="M900 580 L900 630" class="arrow"/>
+
+  <path d="M500 500 C585 500 615 500 695 500" class="arrow" stroke-dasharray="7 6"/>
+  <text x="600" y="486" text-anchor="middle" class="label">transaction event</text>
+</svg>
